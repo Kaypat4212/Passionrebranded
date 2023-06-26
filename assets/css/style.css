@@ -16,7 +16,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #000000;
 }
 
 a {
@@ -1630,12 +1630,12 @@ section {
 .contact .info-box i {
   font-size: 38px;
   line-height: 0;
-  color: #007b21;
+  color: #ffffff;
 }
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #007b21;
+  color: #ffffff;
   font-weight: 700;
   margin: 20px 0 10px 0;
 }
@@ -2285,6 +2285,12 @@ section {
   width: calc(100% - 140px);
 }
 
+.footer .footer-newsletter form input[type=text] {
+  border: 0;
+  padding: 8px;
+  width: calc(100% - 140px);
+}
+
 .footer .footer-newsletter form input[type=submit] {
   position: absolute;
   top: 0;
@@ -2302,7 +2308,8 @@ section {
 }
 
 .footer .footer-newsletter form input[type=submit]:hover {
-  background: #5969f3;
+  background: #00671d;
+  color: white;
 }
 
 .footer .footer-top {
@@ -2425,3 +2432,8 @@ section {
   font-size: 13px;
   color: #012970;
 }
+
+
+
+/* rates */
+

@@ -34,9 +34,11 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+small {
   font-family: "Nunito", sans-serif;
   color: #002d10;
+  font-weight: 700;
 }
 
 /*--------------------------------------------------------------
@@ -44,7 +46,11 @@ h6 {
 --------------------------------------------------------------*/
 section {
   padding: 60px 0;
-  overflow: hidden;
+  /* overflow: hidden;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh; */
 }
 
 .section-header {
@@ -182,7 +188,7 @@ section {
 .header.header-scrolled {
   background: #fff;
   padding: 15px 0;
-  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+  box-shadow: 0px 2px 20px rgba(1, 112, 21, 0.1);
 }
 
 .header .logo {
@@ -197,7 +203,7 @@ section {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #012970;
+  color: #00660e;
   font-family: "Nunito", sans-serif;
   margin-top: 3px;
 }
@@ -256,7 +262,9 @@ section {
 .navbar .getstarted:focus {
   background: #125500;
   padding: 8px 20px;
-  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   color: #fff;
 }
@@ -301,7 +309,7 @@ section {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #4154f1;
+  color: #000000;
 }
 
 .navbar .dropdown:hover>ul {
@@ -327,13 +335,13 @@ section {
 
 .navbar .megamenu ul li a,
 .navbar .megamenu ul li:hover>a {
-  color: #013289;
+  color: #000000;
 }
 
 .navbar .megamenu ul li a:hover,
 .navbar .megamenu ul li .active,
 .navbar .megamenu ul li .active:hover {
-  color: #4154f1;
+  color: #00831a;
 }
 
 .navbar .dropdown .dropdown ul {
@@ -392,7 +400,7 @@ section {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(1, 22, 61, 0.9);
+  background:#00831a;
   transition: 0.3s;
 }
 
@@ -420,13 +428,13 @@ section {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #012970;
+  color: #000000;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #4154f1;
+  color: #00831a;
 }
 
 .navbar-mobile .getstarted,
@@ -461,7 +469,7 @@ section {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #4154f1;
+  color: #000000;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -1090,7 +1098,7 @@ section {
 
 .faq .accordion-button:not(.collapsed) {
   background: none;
-  color: #4154f1;
+  color: #006618;
   border-bottom: 0;
 }
 
@@ -1396,13 +1404,13 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: #ffffff;
   opacity: 1;
-  border: 1px solid #4154f1;
+  border: 1px solid #00651e;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #4154f1;
+  background-color: #41f179;
 }
 
 .testimonials .swiper-slide {
@@ -1765,17 +1773,17 @@ section {
 }
 
 .blog .entry .entry-title a {
-  color: #012970;
+  color: #003f07;
   transition: 0.3s;
 }
 
 .blog .entry .entry-title a:hover {
-  color: #4154f1;
+  color: #00ae1a;
 }
 
 .blog .entry .entry-meta {
   margin-bottom: 15px;
-  color: #4084fd;
+  color: #00710d;
 }
 
 .blog .entry .entry-meta ul {
@@ -1798,7 +1806,7 @@ section {
 }
 
 .blog .entry .entry-meta a {
-  color: #777777;
+  color: #006c19;
   font-size: 14px;
   display: inline-block;
   line-height: 1;
@@ -1815,8 +1823,8 @@ section {
 
 .blog .entry .entry-content .read-more a {
   display: inline-block;
-  background: #4154f1;
-  color: #fff;
+  background: #00820f;
+  color: #000000;
   padding: 6px 20px;
   transition: 0.3s;
   font-size: 14px;
@@ -1824,7 +1832,7 @@ section {
 }
 
 .blog .entry .entry-content .read-more a:hover {
-  background: #5969f3;
+  background: #00580a;
 }
 
 .blog .entry .entry-content h3 {

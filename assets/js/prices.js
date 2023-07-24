@@ -34,6 +34,7 @@ const displayCoinsData = (coinsData) => {
     coinImage.setAttribute('width', '23');
     coinImage.setAttribute('height', '23');
     coinImage.setAttribute('data-aos', 'flip-left');
+    // coinImage.setAttribute('style', 'background-color: black; border-radius:20px; padding:1px;');
     priceDiv.appendChild(coinImage);
     priceDiv.innerHTML += '<br/>';
 

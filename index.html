@@ -26,6 +26,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 
 </head>
@@ -34,10 +35,29 @@
 
   <style>
     .coin-price {
-      font-size: 14px;
+      font-size: 12px;
+      display: grid;
+      background-color: ;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
       margin-bottom: 10px;
       /* Add more styling properties as desired */
     }
+
+    .ml4 {
+  position: relative;
+  font-weight: 900;
+  font-size: 4.5em;
+}
+.ml4 .letters {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0.3em;
+  right: 0;
+  opacity: 0; 
+}
   
     .coin-name {
       font-weight: bold;
@@ -49,7 +69,7 @@
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="/index.html" class="logo d-flex align-items-center">
         <img width="70px" src="Assests/favicon.png"alt="">
       </a>
 
@@ -57,27 +77,30 @@
         <ul>
           <li><a class="nav-link scrollto active" href="/index.html">Home</a></li>
           <li><a class="nav-link scrollto" href="/Rates.html">Exchange Rates</a></li>
+          <li><a class="nav-link scrollto" href="/blog.html">Blog</a></li>
           <li><a class="nav-link scrollto" href="/Faqs.html">Faqs</a></li>
           <li><a class="nav-link scrollto" href="/About-us.html">About us</a></li>
-          <li><a href="blog.html">Learn</a></li>
           <li class="dropdown"><a href="#"><span>Useful links</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Bitcoin</a></li>
               <li class="dropdown"><a href="#"><span>Learn</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="#">Introduction to cryptocurrency</a></li>
-                  <li><a href="#">Benefit of cryptocurrency</a></li>
+                  <li><a href="/Blogpost/introductiontoblockchain.html">Introduction to blockchain</a></li>
+                  <li><a href="/Blogpost/Thebasicsofcryptocurrency.html">The basics of cryptocurrency</a></li>
                   <li>
-                    <a>Getting started with cryptocurrency?</p>
-                    <a href="#"><Button>Click to learn how to trade in seconds</Button></a>
+                    <a href="/Blogpost/Typesofcryptocurrency.html">Types of cryptocurrencies</p>
+                    <a href="/Learn.html"><Button class="btn btn-success">More</Button></a>
                   </li>
+
+                  <style>
+                    
+                  </style>
 
                   <!-- <li><a href="#">Deep Drop Down 4</a></li>
                   <li><a href="#">Deep Drop Down 5</a></li> -->
                 </ul>
               </li>
               <li><a href="/alts.html">Alts</a></li>
-              <li><a href="#">Fiats</a></li>
+              <li><a href="/">Fiats</a></li>
               <!-- <li><a href="#"></a></li> -->
             </ul>
           </li>
@@ -108,9 +131,10 @@
           </li> -->
 
           <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
-          <li><a class="getstarted" href="https://user.kayxchange.net">Get Started</a></li>
+        
           <div class="d-flex justify-content-center">
-            <a href=""><img width="120px" src="/Assests/appstore.png" alt=""></a>
+            <a href=""><img width="150px" src="/Assests/appstore.png" alt=""></a>
+            <!-- <li><a class="getstarted" href="https://user.kayxchange.net">Get Started</a></li> -->
           </div>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -125,7 +149,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Buy, sell and manage your crypto on <br> <h3>Kay xchange</h3></h1>
+          <h1 data-aos="fade-up">Buy, Sell and Exchange your Crypto to NGN <br> On <h3>Kay xchange</h3></h1>
+          <!-- <small>No KYC Required</small> -->
           <h2 data-aos="fade-up" data-aos-delay="400">Easily Trade Cryptocurrencies like <br> BTC, USDT, ETH, LTC & XRP To NGN</h2>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
@@ -143,6 +168,12 @@
           <a href=""><img width="120px" src="/Assests/appstore.png" alt=""></a>
         </div>
       </div>
+
+      <h1 class="ml4">
+        <span class="letters letters-1">No</span>
+        <span class="letters letters-2">KYC</span>
+        <span class="letters letters-3">Required</span>
+      </h1>
     </div>
 
   </section><!-- End Hero -->
@@ -199,12 +230,12 @@ Our team of experts is always available to provide guidance and support to our c
                 </div>
               </div>
               <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">P</span>
+                <span class="sr-only fs-5 text-black">P</span>
+                <span class="carousel-control-prev-icon text-black" aria-hidden="true"></span>
               </a>
               <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">N</span>
+                <span class="carousel-control-next-icon text-black" aria-hidden="true"></span>
+                <span class="sr-only fs-5 text-black">N</span>
               </a>
             </div>
           </div>
@@ -220,7 +251,7 @@ Our team of experts is always available to provide guidance and support to our c
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-          <h2>Why do people get involved with cryptocurrencies?</h2>
+          <h3>Why do people get involved with cryptocurrency?</h3>
         </header>
 
         <div class="row">
@@ -529,7 +560,7 @@ Bitcoin, often referred to as the king of cryptocurrencies, revolutionized the d
           <img src="/Assests//crypto-icons/btc.svg" alt="">
           <h3>Bitcoin</h3>
           <p>Trade Bitcoin to Naira and tap into the world of cryptocurrencies.</p>
-          <a href="https://wa.me+23409016740523?text=Hello%2C%20I%20would%20like%20to%20trade%20$__%20BTC%20to%20Naira" class="read-more"><span>Trade Now</span> <i class="bi bi-arrow-right"></i></a>
+          <a href="https://wa.me/+2349016740523?text=Hello%2C%20I%20would%20like%20to%20trade%20$__%20BTC%20to%20Naira" class="read-more"><span>Trade Now</span> <i class="bi bi-arrow-right"></i></a>
         </div>
       </div>
     
@@ -567,7 +598,7 @@ Bitcoin, often referred to as the king of cryptocurrencies, revolutionized the d
 </section><!-- End Services Section -->
 
 
-<div class="container " data-aos="fade-up" data-aos-delay="500">
+<div class="container" data-aos="fade-up" data-aos-delay="500">
   <div class="service-box green">
     <img width="125px" src="/Assests/favicon.png" alt="">
     <h3>Got other cryptocurrencies?</h3>
@@ -1070,8 +1101,8 @@ Bitcoin, often referred to as the king of cryptocurrencies, revolutionized the d
             <div class="post-box">
               <!-- <div class="post-img"><img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt=""></div> -->
               <span class="post-date">Tue, September 15</span>
-              <h3 class="post-title">Introduction to Cryptocurrency</h3>
-              <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+              <h3 class="post-title">Introduction to Blockchain Technology</h3>
+              <a href="/Blogpost/introductiontoblockchain.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
@@ -1079,8 +1110,8 @@ Bitcoin, often referred to as the king of cryptocurrencies, revolutionized the d
             <div class="post-box">
               <!-- <div class="post-img"><img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt=""></div> -->
               <span class="post-date">Fri, August 28</span>
-              <h3 class="post-title">Benefits of cryptocurrency</h3>
-              <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+              <h3 class="post-title">Understanding Cryptocurrency Wallets</h3>
+              <a href="/Blogpost/Understandingcryptocurrencywallets.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
@@ -1088,8 +1119,8 @@ Bitcoin, often referred to as the king of cryptocurrencies, revolutionized the d
             <div class="post-box">
               <!-- <div class="post-img"><img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt=""></div> -->
               <span class="post-date">Mon, July 11</span>
-              <h3 class="post-title">Getting started with cryptocurrencies</h3>
-              <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+              <h3 class="post-title">The Basics of Cryptocurrency</h3>
+              <a href="/Blogpost/Thebasicsofcryptocurrency.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
@@ -1097,7 +1128,7 @@ Bitcoin, often referred to as the king of cryptocurrencies, revolutionized the d
             <div class="post-box">
               <!-- <div class="post-img"><img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt=""></div> -->
               <span class="post-date">Mon, July 11</span>
-              <h3 class="post-title">Start a trade today!</h3>
+              <h3 class="post-title">Types of Cryptocurrencies</h3>
               <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
@@ -1122,9 +1153,9 @@ Bitcoin, often referred to as the king of cryptocurrencies, revolutionized the d
             <h4 class="text-white">Our Newsletter</h4>
             <p>Subscribe to our newsletter to stay updated with the latest <br> Market news & Updates</p>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 ">
             <form action="" method="post">
-              <input type="text" placeholder="Your name" name="email"> <input class="mt-4" type="email" placeholder="Email address" name="email"><input type="submit" value="Subscribe">
+              <input type="text" placeholder="Your name" name="email"> <br> <input class="mt-4" type="email" placeholder="Email address" name="email"><input type="submit" value="Subscribe">
             </form>
           </div>
         </div>
@@ -1154,7 +1185,7 @@ Bitcoin, often referred to as the king of cryptocurrencies, revolutionized the d
               <li><i class="bi bi-chevron-right"></i> <a href="/index.html" style="color: green;">Home</a></li>
               <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="">About us</a></li>
               <!-- <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li> -->
-              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="#">Terms of Usage</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="/Termsofusage.html">Terms of Usage</a></li>
               <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="#">Privacy policy</a></li>
             </ul>
           </div>
@@ -1162,9 +1193,11 @@ Bitcoin, often referred to as the king of cryptocurrencies, revolutionized the d
           <div class="col-lg-2 col-6 footer-links">
             <h4 style="color: green;">Useful Links</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="#">Bitcoin</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="#">Alts</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="#">Fiats</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="/blog.html">Blog</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="/Faqs.html">Faqs</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="/Bitcoin.html">Bitcoin</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="/Alts.html">Alts</a></li>
+              <!-- <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="/Fiats.html">Fiats</a></li> -->
               <!-- <li><i class="bi bi-chevron-right"></i> <a href="#"></a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li> -->
             </ul>
@@ -1209,6 +1242,60 @@ Bitcoin, often referred to as the king of cryptocurrencies, revolutionized the d
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script>
+    var ml4 = {};
+ml4.opacityIn = [0,1];
+ml4.scaleIn = [0.2, 1];
+ml4.scaleOut = 3;
+ml4.durationIn = 800;
+ml4.durationOut = 600;
+ml4.delay = 500;
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml4 .letters-1',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-1',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4 .letters-2',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-2',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4 .letters-3',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-3',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4',
+    opacity: 0,
+    duration: 500,
+    delay: 500
+  });
+  </script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

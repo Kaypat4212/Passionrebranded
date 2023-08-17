@@ -100,7 +100,7 @@
                 </ul>
               </li>
               <li><a href="/alts.html">Alts</a></li>
-              <li><a href="/">Fiats</a></li>
+              <li><a href="/Fiats.html">Fiats</a></li>
               <!-- <li><a href="#"></a></li> -->
             </ul>
           </li>
@@ -162,7 +162,7 @@
           </div>
         </div>
         <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-          <img src="../Assests/images/kay xchange logo mockup.png" class="img-fluid" alt="">
+          <img src="/Assests/images/kay-xchange-logo-mockup.png" class="img-fluid" alt="">
         </div>
         <div class="d-lg-none justify-content-center">
           <a href=""><img width="120px" src="/Assests/appstore.png" alt=""></a>
@@ -1129,7 +1129,7 @@ Bitcoin, often referred to as the king of cryptocurrencies, revolutionized the d
               <!-- <div class="post-img"><img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt=""></div> -->
               <span class="post-date">Mon, July 11</span>
               <h3 class="post-title">Types of Cryptocurrencies</h3>
-              <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+              <a href="/Blogpost/Typesofcryptocurrency.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
@@ -1143,6 +1143,8 @@ Bitcoin, often referred to as the king of cryptocurrencies, revolutionized the d
 
   </main><!-- End #main -->
 
+
+
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
 
@@ -1154,9 +1156,12 @@ Bitcoin, often referred to as the king of cryptocurrencies, revolutionized the d
             <p>Subscribe to our newsletter to stay updated with the latest <br> Market news & Updates</p>
           </div>
           <div class="col-lg-6 ">
-            <form action="/forms/send.php" method="post">
-              <input type="text" placeholder="Your name" name="email"> <br> <input class="mt-4" type="email" placeholder="Email address" name="email"><input type="submit" value="Subscribe">
-            </form>
+<form method="post">
+<input type="text" placeholder="Your name" name="email"> <br> 
+<input class="mt-4" type="email" placeholder="Email address" name="email">
+<input type="submit" value="Subscribe">
+</form>
+            
           </div>
         </div>
       </div>
@@ -1183,10 +1188,10 @@ Bitcoin, often referred to as the king of cryptocurrencies, revolutionized the d
             <h4 style="color: green;">Company</h4>
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="/index.html" style="color: green;">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="/About-us.html">About us</a></li>
               <!-- <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li> -->
               <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="/Termsofusage.html">Terms of Usage</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="#">Privacy policy</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="/Privacy-policy.html">Privacy policy</a></li>
             </ul>
           </div>
 
@@ -1305,3 +1310,53 @@ anime.timeline({loop: true})
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
+<?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+require 'PHPMailer/src/Exception.php';
+
+if(isset($_POST['name']) && isset($_POST['email'])){
+$name = $_POST['name'];
+$email = $_POST['email'];
+$namefrom = "New subscriber";
+
+$mail = new PHPMailer();
+
+
+
+
+
+//smtp settings
+$mail->Host = "server86.web-hosting.com";
+$mail->Port = 465;
+$mail->SMTPSecure = "ssl";
+$mail->Username = "info@kayxchange.net";
+$mail->Password = "082234778Pat#";
+
+//email settings
+$mail->isHTML(true);
+$mail->setFrom("info@kayxchange.net", $namefrom);
+$mail->addReplyTo($email, $name); //Set reply-to address
+$mail->addAddress("info@kayxchange.net"); //Set who the message is to be sent to
+$mail->Subject = "Subscriber form from $name ($email)";
+$mail->Body = "New subscriber-> Name: $name<br>Email: $email";
+
+// if($mail->send()){
+// $status = "success";
+// $response = "Email is sent!";
+// }
+// else
+// {
+// $status = "failed";
+// $response = "Something is wrong: <br>" . $mail->ErrorInfo;
+// }
+
+// exit(json_encode(array("status" => $status, "response" => $response)));
+}
+
+?>

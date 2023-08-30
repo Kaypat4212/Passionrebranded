@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="Assests/favicon.png" rel="icon">
-  <link href="Assests/favicon.png" rel="apple-touch-icon">
+  <link rel="icon" type="image/x-icon" href="/Assests/favicon.png">
+  <link href="/Assests/favicon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -39,13 +39,13 @@
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="/index.html" class="logo d-flex align-items-center">
+      <a href="/index.php" class="logo d-flex align-items-center">
         <img width="70px" src="Assests/favicon.png"alt="">
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="/index.html">Home</a></li>
+          <li><a class="nav-link scrollto active" href="/index.php">Home</a></li>
           <li><a class="nav-link scrollto" href="/Rates.html">Exchange Rates</a></li>
           <li><a class="nav-link scrollto" href="/blog.html">Blog</a></li>
           <li><a class="nav-link scrollto" href="/Faqs.html">Faqs</a></li>
@@ -115,7 +115,7 @@
 
 <Main>
 
-<div class="d-lg-flex justify-content-lg-center d-block justify-content-center">
+<div class="d-lg-flex m-lg-5 m-xs-3 m-md-3 m-3 justify-content-lg-center d-block justify-content-center">
     <h1 class="text-lg-start text-center">Terms of usage </h1>
     <img class="imggg" src="/Assests/Accept terms.gif" alt="">
     <h3 class="p-2 fs-5">Kay Xchange Terms of Use</h3>
@@ -177,7 +177,9 @@
 
     .imggg{
         width: 100%;
-        max-width: 300px;
+        border: 10px solid green;
+        margin: auto;
+        border-radius: 20px;
     }
 
     Main{
@@ -191,6 +193,15 @@
 
     p{
         font-weight: 500;
+    }
+
+    @media (min-width:1024px) {
+      .imggg{
+        width: 100%;
+        max-width: 300px;
+        border: 10px solid green;
+        margin: auto;
+    }
     }
 
 
@@ -223,7 +234,7 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="index.php" class="logo d-flex align-items-center">
               <img src="Assests/favicon.png"  alt="">
             </a>
             <h3 style="color: green;">Socials</h3>
@@ -239,7 +250,7 @@
           <div class="col-lg-2 col-6 footer-links">
             <h4 style="color: green;">Company</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="/index.html" style="color: green;">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/index.php" style="color: green;">Home</a></li>
               <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="">About us</a></li>
               <!-- <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li> -->
               <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="#">Terms of Usage</a></li>

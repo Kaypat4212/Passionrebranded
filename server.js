@@ -1,21 +1,13 @@
-const express = require('express');
+const express = require("express");
+
 const app = express();
-const bodyParser = require('body-parser');
-const port = process.env.PORT || 3000;
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static('public')); // Create a 'public' directory for your HTML files
+app.use(express.static("public"));
 
-app.post('/submit-form', (req, res) => {
-  // Handle form submission here
-  // You can access form data using req.body
-  console.log('Form data:', req.body);
-  
-  // You can implement your data processing logic here
-  
-  res.send('Form submission successful'); // Send a response back to the client
+app.get("/home", (req, res) => {
+  res.sendFile("./index.html", { root: __dirname + "../FlexStartbad(kx)" });
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+app.listen(3000, () => {
+  console.log("Server is listening on port 3000..");
 });

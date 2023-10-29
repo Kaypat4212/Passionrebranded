@@ -260,32 +260,178 @@
               <img src="/Assests/favicon.png"  alt="">
             </a>
             <h3 style="color: green;">Socials</h3>
-            <div class="social-links mt-3">
+            <!-- <div class="social-links mt-3">
               <a href="https://www.twitter.com/kay__xchange" class="twitter"><i style="color: green;" class="bi bi-twitter"></i></a>
               <a href="https://api.whatsapp.com/send?phone=+2349016740523&text=Hello%2C%20I%20would%20like%20to%20start%20a%20trade" class="whatsapp"><i style="color: green;" class="bi bi-whatsapp"></i></a>
               <a href="https://www.instagram.com/kay__xchange" class="instagram"><i style="color: green;" class="bi bi-instagram"></i></a>
               <a href="https://www.instagram.com/kay__xchange" class="snapchat"><i style="color: green;" class="bi bi-snapchat"></i></a>
-              <!-- <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div> -->
+
+            <div class="main">
+              <div class="up">
+                <button class="card1">
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"/>
+                </button>
+                <button class="card2">
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/twitter--v1.png" alt="twitter--v1"/>
+                </button>
+              </div>
+              <div class="down">
+                <button class="card3">
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/>
+                </button>
+                <button class="card4">
+                  <img width="48" height="48" src="https://img.icons8.com/fluency/48/snapchat.png" alt="snapchat"/>
+                </button>
+              </div>
             </div>
           </div>
+
+          <style>
+            .main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #cc39a4;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.twitter {
+  margin-top: 1.5em;
+  margin-left: -.9em;
+  fill: #03A9F4;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.github {
+  margin-top: -.6em;
+  margin-left: 1.2em;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.discord {
+  margin-top: -.9em;
+  margin-left: -1.2em;
+  fill: #8c9eff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #00b709;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cac000;
+}
+
+.card2:hover .twitter {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+
+.card4:hover .discord {
+  fill: white;
+}
+          </style>
 
           <div class="col-lg-2 col-6 footer-links">
             <h4 style="color: green;">Company</h4>
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="/index.php" style="color: green;">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="/About-us.php">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="/About-us.html">About us</a></li>
               <!-- <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li> -->
-              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="/Termsofusage.php">Terms of Usage</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="/Privacy-policy.php">Privacy policy</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="/Termsofusage.html">Terms of Usage</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="/Privacy-policy.html">Privacy policy</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-6 footer-links">
             <h4 style="color: green;">Useful Links</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="/Bitcoin.php">Bitcoin</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="/Alts.php">Alts</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="/Fiats.php">Fiats</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="/Bitcoin.html">Bitcoin</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="/Alts.html">Alts</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a style="color: green;" href="/Fiats.html">Fiats</a></li>
               <!-- <li><i class="bi bi-chevron-right"></i> <a href="#"></a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li> -->
             </ul>

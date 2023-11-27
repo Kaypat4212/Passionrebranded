@@ -19,11 +19,7 @@ $mail = new PHPMailer();
 
 
 //smtp settings
-$mail->Host = "server86.web-hosting.com";
-$mail->Port = 465;
-$mail->SMTPSecure = "ssl";
-$mail->Username = "info@kayxchange.net";
-$mail->Password = "08121164870Pat#";
+
 
 //email settings
 $mail->isHTML(true);
